@@ -5,7 +5,7 @@ let AUTH_TOKEN = {
 };
 
 test('1 : Getting user list', async({request})=>{
-let response =  await request.get('https://gorest.co.in//public/v2/users/8511439', {
+let response =  await request.get('https://gorest.co.in//public/v2/users/8518660', {
         headers : AUTH_TOKEN
     })
 
@@ -48,7 +48,7 @@ test('3 : Updating created user in tht list', async({request})=>{
         gender: 'male',
         status: 'inactive'
     }
-let response =  await request.put('https://gorest.co.in//public/v2/users/8511439', {
+let response =  await request.put('https://gorest.co.in//public/v2/users/8518660', {
         headers : AUTH_TOKEN,
         data:user
     })
@@ -62,7 +62,7 @@ let response =  await request.put('https://gorest.co.in//public/v2/users/8511439
 })
 
 test('4 : Deleting created user in tht list', async ({ request }) => {
-    let response = await request.delete('https://gorest.co.in//public/v2/users/8511439', {
+    let response = await request.delete('https://gorest.co.in//public/v2/users/8518660', {
         headers: AUTH_TOKEN,
     })
 
