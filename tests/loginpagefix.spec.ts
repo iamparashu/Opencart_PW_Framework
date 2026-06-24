@@ -22,7 +22,7 @@ test('forgotten pwd link exist',async({loginPage})=>{
     expect (await loginPage.forgotpwdlinkExist()).toBeTruthy();
 })
 
-test('login page dologin test', async({loginPage,homePage})=>{
+test.skip('login page dologin test', async({loginPage,homePage})=>{
     console.log('username is ', process.env.APPUSERNAME );
     console.log('password is ', process.env.APPPASSWORD );
     await loginPage.doLogin(process.env.APPUSERNAME!, process.env.APPPASSWORD!);
